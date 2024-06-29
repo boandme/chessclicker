@@ -1,0 +1,62 @@
+
+    
+    
+  body {
+    background-color: #D3B683
+  }
+  #pawn {
+    background: url(pawn.jpeg);
+    width: 375px;
+    height: 375px;
+  }
+  #knight {
+    background: url(knight.png);
+    width: 375px;
+    height: 375px;
+  }
+  #bishop {
+    background: url(bishop.jpeg);
+    width: 750px;
+    height: 750px;
+  }
+  #rook {
+    background: url(rook.png);
+    width: 750px;
+    height: 750px;
+  }
+  #queen {
+    background: url(queen.jpeg);
+    width: 600px;
+    height: 600px;
+  }
+  #king {
+    background: url(king.jpeg);
+    width: 700px;
+    height: 2000px;
+  }
+  /*#heading {
+    display:inline-block;
+    text-align:center;
+  }
+  */
+  h1 {
+    font-size:40;
+  }
+
+  #mony {
+    color: darkgreen;
+    font-size: 40;
+    
+  }
+
+span.title {
+  color: blue;
+  font-size: 50;
+  text-align: center;
+}
+  
+/* 
+  #mony, .title {
+    display: inline-block;
+  }
+  */
