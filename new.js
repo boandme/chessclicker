@@ -5,7 +5,9 @@ var autoclick = false;
 currentCCrewards = 10
 currentCSrewards = 5
 var current_price = 500
+var chess_players = 0
 console.log("Logging");
+up5used = false
 function clickpawn(){
     money+= amt_per_click
     document.getElementById("mony").innerText = money
@@ -25,6 +27,7 @@ function up2() {
         money -= 150;
         document.getElementById("mony").innerText = money;
         setInterval(increment, 1000)
+        chess_players ++;
     
         
 
@@ -42,7 +45,7 @@ function increment() {
 
 function up3() {
     if (money >= current_price) {
-        money -= 20;
+        money -= current_price;
         amt_per_click += currentCCrewards
         for (var i = 0; i<currentCSrewards;i++){
             setInterval(increment, 1000)
@@ -71,14 +74,32 @@ function up3() {
         }
          
        
-        console.log(currentCCrewards.concat(" c/c, +", currentCSrewards, " c/s"))
+        
         
     };
 
 };
 function up4() {
-    if (money > 5000) {
-        money -= 5000
-        amt_per_click += 10
+    if (money > 2000) {
+        money -= 2000
+        for (var k = 0; k<20;k++){
+            setInterval(increment, 1000)
+        }
+        document.getElementById("mony").innerText = money;
+        chess_players ++;
     }
 }
+function up5() {
+        if (money >= 12) {
+            money -= 12
+            reward = Math.round(chess_players/2)
+            console.log(reward)
+            for (var o = 0; o< reward;o++) {
+                setInterval(increment, 1000)
+            }
+            document.getElementById("mony").innerText = money;
+            
+        }
+        
+    }
+
