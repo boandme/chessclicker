@@ -48,11 +48,16 @@
     font-size: 40;
     
   }
-
-span.title {
+#top{
+  text-align: center;
+}
+span.title{
   color: blue;
   font-size: 50;
   text-align: center;
+}
+#shop {
+  display:block;
 }
   
 /* 
